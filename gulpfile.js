@@ -28,7 +28,7 @@ const bundlePug = () => {
     .pipe(pug({
         pretty: true,
     }))
-    .pipe(gulp.dest('./html'));
+    .pipe(gulp.dest('./'));
 }
 
 const bundle = async () => {
