@@ -1,0 +1,30 @@
+:root{
+// COLORS
+--colorPrimary: #000D82;
+--colorSecondary: #202020;
+
+--colorBGPrimary: #000D82;
+--colorBGSecondary: #1E1E1E;
+
+--colorText: #FFFFFF;
+--colorHeading: #FFFFFF;
+
+--colorOutlines: #FFFFFF;
+--colorOutlinesLight: #FFF4;
+
+
+// FONTS
+--fontSize-1: clamp(2.5rem, 5.49vw + 1.059rem, 6rem);
+--fontSize-2: clamp(2.25rem, 4.706vw + 0.765rem, 5rem);
+--fontSize-3: clamp(2rem, 1.569vw + 1.588rem, 3rem);
+--fontSize-4: clamp(1.75rem, 0.784vw + 1.544rem, 2.25rem);
+--fontSize-5: clamp(1rem, 0.196vw + 0.949rem, 1.125rem);
+--fontSize-p1: clamp(0.875rem, 0.196vw + 0.824rem, 1rem);
+
+
+// SIZES
+--sizeContentWidth: 90rem;
+--sizeContentWidthSmall: 55rem;
+--sizeContentOffset: clamp(1rem, 15.476vw + -6.429rem, 7.5rem);
+--sizeSectionOffset: clamp(2.5rem, 3.922vw + 1.471rem, 5rem);
+}

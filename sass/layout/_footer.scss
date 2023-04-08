@@ -1,0 +1,13 @@
+.footer {
+    background: var(--colorBGPrimary);
+    padding-bottom: 0;
+
+    &__border {
+        border-top: 1px solid var(--colorOutlinesLight);
+        padding-block: clamp(1.5rem, 3.571vw + -0.214rem, 3rem);
+    }
+
+    &__copy {
+        font-size: var(--fontSize-5);
+    }
+}

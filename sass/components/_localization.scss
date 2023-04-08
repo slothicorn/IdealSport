@@ -1,0 +1,28 @@
+.localization {
+    position: relative;
+    padding: .25rem;
+    z-index: 10;
+    line-height: 1;
+    
+    $block:&;
+
+    &__langs {
+        position: absolute;
+        top: calc(100% + .5rem);
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: .5rem;
+        background: var(--colorSecondary);
+        max-height: 0;
+        padding-inline: .5rem;
+        overflow: hidden;
+
+        transition: all .4s ease;
+    }
+
+    &:hover {
+        #{$block}__langs{
+            max-height: 100vh;
+        }
+    }
+}

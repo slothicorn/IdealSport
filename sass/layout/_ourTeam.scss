@@ -1,0 +1,41 @@
+.ourTeam {
+    background: var(--colorBGPrimary);
+
+    &__articles {
+       display: flex;
+       flex-direction: column;
+    }
+}
+
+.article {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: clamp(2.5rem, 5.952vw + -0.357rem, 5rem);
+    gap: clamp(1.5rem, 2.381vw + 1.357rem, 3.5rem);
+
+    &__image {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        object-position: top 10% right 0;
+        border-radius: .5rem;
+    }
+
+    &__title {
+        margin-bottom: 0;
+    }
+
+    &__text {
+        margin-top: clamp(0.75rem, 2.976vw + -0.679rem, 2rem);
+    }
+
+    @media (max-width: 40em) {
+        grid-template-columns: 1fr;
+
+        &__image {
+            max-width: 13rem;
+            margin-inline: auto;
+        }
+    }
+}

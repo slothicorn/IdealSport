@@ -1,0 +1,21 @@
+.u-frame {
+    max-width: var(--sizeContentWidth);
+    margin-inline: auto;
+}
+
+.u-frameSmall {
+    max-width: var(--sizeContentWidthSmall);
+    margin-inline: auto;
+}
+
+.u-frameOffset {
+    padding-inline: var(--sizeContentOffset);
+}
+
+.u-sectionMargin {
+    margin-block: var(--sizeSectionOffset);
+}
+
+.u-sectionPadding {
+    padding-block: var(--sizeSectionOffset);
+}

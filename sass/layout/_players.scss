@@ -1,0 +1,80 @@
+.players {
+    &__frame {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+        gap: clamp(1.75rem, 4.167vw + -0.25rem, 3.5rem);
+    }
+
+    &__btn {
+        display: block;
+        margin-inline: auto;
+        margin-top: clamp(2.5rem, 7.143vw + -0.929rem, 5.5rem);
+    }
+}
+
+.playerCard {
+    height: 100%;
+    border-radius: .5rem;
+    overflow: hidden;
+    position: relative;
+
+    $block:&;
+
+    &__imageWrapper {
+        display: block;
+        overflow: hidden;
+
+        &:hover {
+            #{$block}__image {
+                scale: 1.05;
+            }
+        }
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        transition: all .2s ease-out;
+    }
+
+    &__flag {
+        position: absolute;
+        width: 25%;
+        aspect-ratio: 5 / 3.5;
+        top: 0;
+        right: 0;
+        
+        svg {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__info {
+        display: grid;
+        place-items: center;
+        background: var(--colorBGPrimary);
+        padding: clamp(0.5rem, 1.19vw + -0.071rem, 1rem);
+    }
+
+    &__name {
+        font-size: clamp(1.75rem, 0.784vw + 1.544rem, 2.25rem);
+        margin-bottom: 0;
+    }
+
+    &__link {
+        margin-bottom: clamp(0.5rem, 1.19vw + -0.071rem, 1rem);
+        &, &:focus, &:active, &:visited {
+            color: var(--colorText);
+        }
+    }
+}

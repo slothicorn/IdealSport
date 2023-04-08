@@ -1,0 +1,29 @@
+.aboutUs {
+
+    &__frame {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: clamp(1.5rem, 13.5vw + -4rem, 6.25rem);
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: .5rem;
+    }
+
+    &__btn {
+        margin-top: clamp(1rem, 2.381vw + -0.143rem, 2rem);
+    }
+
+    @media (max-width: 40em){
+        &__frame {
+            grid-template-columns: 1fr;
+        }
+
+        &__btn {
+            margin-inline: auto;
+        }
+    }
+}

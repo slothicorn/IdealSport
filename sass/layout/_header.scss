@@ -1,0 +1,21 @@
+.header {
+    background: var(--colorSecondary);
+
+    &__frame {
+        display: flex;
+        gap: clamp(1.5rem, 2vw,2rem);
+        align-items: center;
+        min-height: 5rem;
+    }
+
+    &__logo {
+        margin-right: auto;
+        max-width: clamp(6rem, 5.385vw + 4.654rem, 9.5rem);
+
+        svg {
+            display: block;
+            max-width: 100%;
+        }
+    }
+}
+

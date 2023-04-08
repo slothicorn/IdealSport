@@ -1,0 +1,169 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='apple-touch-icon', sizes='180x180', href='/img/favicon/apple-touch-icon.png')
+        link(rel='icon', type='image/png', sizes='32x32', href='/img/favicon/favicon-32x32.png')
+        link(rel='icon', type='image/png', sizes='16x16', href='/img/favicon/favicon-16x16.png')
+        link(rel='manifest', href='/img/favicon/site.webmanifest')
+        link(rel='mask-icon', href='/img/favicon/safari-pinned-tab.svg', color='#5bbad5')
+        meta(name='msapplication-TileColor', content='#da532c')
+        meta(name='theme-color', content='#ffffff')
+        link(rel='preconnect', href='https://fonts.googleapis.com')
+        link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600;1,700&display=swap', rel='stylesheet')
+        link(rel="stylesheet", href="../css/style.min.css")
+        script(src='/js/dropdown.js' defer)
+        script(src='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js')
+        script(src='/js/swiper.js' defer)
+        title Ideal Sport
+    body
+        header.header
+            .header__frame.u-frame.u-frameOffset
+                a.header__logo(href="#")
+                    include components/logo
+                include components/navigation
+                include components/socials
+                include components/localization
+        main.main
+            section.hero
+                .swiper.hero__frame.u-frame
+                    .swiper-wrapper
+                        .swiper-slide.slide
+                            picture 
+                                source(srcset='../img/slide1.webp')
+                                img.slide__image(src='../img/slide1.jpg' alt='two men shaking hands' loading='lazy' width='1440' height='960')
+                            .slide__content 
+                                h3.slide__title Petr Čech
+                                span.slide__subtitle Chelsea FC
+                        .swiper-slide.slide
+                            picture 
+                                source(srcset='../img/slide2.webp')
+                                img.slide__image(src='../img/slide2.jpg' alt='ball on the football field' loading='lazy' width='1440' height='960')
+                            .slide__content 
+                                h3.slide__title Petr Čech
+                                span.slide__subtitle Chelsea FC
+                        .swiper-slide.slide
+                            picture 
+                                source(srcset='../img/slide1.webp')
+                                img.slide__image(src='../img/slide1.jpg' alt='two men shaking hands' loading='lazy' width='1440' height='960')
+                            .slide__content 
+                                h3.slide__title Petr Čech
+                                span.slide__subtitle Chelsea FC
+                        .swiper-slide.slide
+                            picture 
+                                source(srcset='../img/slide2.webp')
+                                img.slide__image(src='../img/slide2.jpg' alt='ball on the football field' loading='lazy' width='1440' height='960')
+                            .slide__content 
+                                h3.slide__title Petr Čech
+                                span.slide__subtitle Chelsea FC
+                    .swiper__pagination
+                    .swiper__button--prev
+                        include components/arrows/arrowLeft
+                    .swiper__button--next
+                        include components/arrows/arrowRight
+            section.aboutUs.u-sectionMargin
+                .aboutUs__frame.u-frame.u-frameOffset
+                    .aboutUs__imageWrapper 
+                        picture
+                            source(srcset='../img/team.webp')
+                            img.aboutUs__image(src='../img/team.png' alt='people working together' loading='lazy' width='592' height='424')
+                    .aboutUs__content 
+                        h2.aboutUS__title O nás 
+                        p.aboutUs__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Vestibulum fermentum tortor id mi. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante. Donec ipsum massa, ullamcorper in.
+                        a.aboutUs__btn.buttonBase Kontakt
+            section.ourTeam.u-sectionPadding
+                .ourTeam__frame.u-frame.u-frameOffset
+                    h2.ourTeam__title Náš tým
+                    .ourTeam__articles.u-frameSmall
+                        article.ourTeam__article.article
+                            .article__imageWrapper 
+                                picture
+                                    source(srcset='../img/hanus.webp')
+                                    img.article__image(src='../img/hanus.jpg' alt='Team member photo' loading='lazy' width='1200' height='1576')
+                            .article__content 
+                                h3.article__title Daniel Hanus
+                                span.article__subtitle CEO
+                                p.article__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Vestibulum fermentum tortor id mi. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante.
+                        article.ourTeam__article.article
+                            .article__imageWrapper 
+                                picture
+                                    source(srcset='../img/hanus.webp')
+                                    img.article__image(src='../img/hanus.jpg' alt='Team member photo'  loading='lazy' width='1200' height='1576')
+                            .article__content 
+                                h3.article__title Daniel Hanus
+                                span.article__subtitle CEO
+                                p.article__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Vestibulum fermentum tortor id mi. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante.
+            section.players.u-sectionMargin
+                .players__frame.u-frame.u-frameOffset
+                    h2.players__title Hráči 
+                    .players__list
+                        .players__item.playerCard 
+                            a(href='#').playerCard__imageWrapper
+                                picture
+                                    source(srcset='../img/kalabiska.webp')
+                                    img.playerCard__image(src='../img/kalabiska.jpg' alt='Football player photo' loading='lazy' width='800' height='1067')
+                            .playerCard__flag
+                                include components/flags/czech
+                            .playerCard__info 
+                                h3.playerCard__name Jan Kalabiška
+                                p.playerCard__club 1 FC Slovácko
+                                a.playerCard__link(href='#') Transfer market
+                        .players__item.playerCard 
+                            a(href='#').playerCard__imageWrapper
+                                picture
+                                    source(srcset='../img/kalabiska.webp')
+                                    img.playerCard__image(src='../img/kalabiska.jpg' alt='Football player photo' loading='lazy' width='800' height='1067')
+                            .playerCard__flag
+                                include components/flags/czech
+                            .playerCard__info 
+                                h3.playerCard__name Jan Kalabiška
+                                p.playerCard__club 1 FC Slovácko
+                                a.playerCard__link(href='#') Transfer market
+                        .players__item.playerCard 
+                            a(href='#').playerCard__imageWrapper
+                                picture
+                                    source(srcset='../img/kalabiska.webp')
+                                    img.playerCard__image(src='../img/kalabiska.jpg' alt='Football player photo' loading='lazy' width='800' height='1067')
+                            .playerCard__flag
+                                include components/flags/czech
+                            .playerCard__info 
+                                h3.playerCard__name Jan Kalabiška
+                                p.playerCard__club 1 FC Slovácko
+                                a.playerCard__link(href='#') Transfer market
+                    a.players__btn.buttonBase Všichni hráči
+            section.ourServices.u-sectionPadding 
+                .ourServices__frame.u-frame.u-frameOffset 
+                    h2.ourServices__title Naše služby
+                    ul.ourServices__list 
+                        li.ourServices__item 
+                            include components/icons/icon1
+                            p.ourServices__text Uzavírání a prodlužování hráčských smluv
+                        li.ourServices__item 
+                            include components/icons/icon2
+                            p.ourServices__text Realizace přestupů celosvětově
+                        li.ourServices__item 
+                            include components/icons/icon1
+                            p.ourServices__text Uzavírání a prodlužování hráčských smluv
+                        li.ourServices__item 
+                            include components/icons/icon2 
+                            p.ourServices__text Realizace přestupů celosvětově
+                    picture
+                        source(srcset='../img/player.webp')
+                        img.ourServices__image(src='../img/player.png' alt='Football player kicking ball' loading='lazy' width='800' height='838')
+            sections.subscribe.u-sectionPadding 
+                .subscribe__frame
+                    .subscribe__imageWrapper 
+                        picture
+                            source(srcset='../img/phone.webp', media='(max-width: 900px)')
+                            img.subscribe__image(src='../img/phone.png' alt='Smartphone photo')
+                    .subcribe__content
+                        h2.subscribe__title Sledujte nás
+                        p.subscribe__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Vestibulum fermentum tortor id mi. 
+                        include components/socials
+        footer.footer.u-sectionPadding
+            .footer__frame.u-frame.u-frameOffset
+                .footer__border
+                    span.footer__copy © 2023 Ideal sport s.r.o

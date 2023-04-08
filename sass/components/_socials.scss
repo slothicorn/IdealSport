@@ -1,0 +1,9 @@
+.socials {
+    display: flex;
+    line-height: 1;
+
+    &__link {
+        text-decoration: none;
+        padding: .5rem;
+    }
+}
