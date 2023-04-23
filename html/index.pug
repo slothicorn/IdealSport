@@ -64,7 +64,7 @@ html(lang="en")
                         include components/arrows/arrowLeft
                     .swiper__button--next
                         include components/arrows/arrowRight
-            section.aboutUs.u-sectionMargin
+            section#aboutUs.aboutUs.u-sectionMargin
                 .aboutUs__frame.u-frame.u-frameOffset
                     .aboutUs__imageWrapper 
                         picture
@@ -96,7 +96,7 @@ html(lang="en")
                                 h3.article__title Daniel Hanus
                                 span.article__subtitle CEO
                                 p.article__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Morbi leo mi, nonummy eget tristique non, rhoncus non leo. Vestibulum fermentum tortor id mi. Nullam feugiat, turpis at pulvinar vulputate, erat libero tristique tellus, nec bibendum odio risus sit amet ante.
-            section.players.u-sectionMargin
+            section#players.players.u-sectionMargin
                 .players__frame.u-frame.u-frameOffset
                     h2.players__title Hráči 
                     .players__list
@@ -134,7 +134,7 @@ html(lang="en")
                                 p.playerCard__club 1 FC Slovácko
                                 a.playerCard__link(href='#') Transfer market
                     a.players__btn.buttonBase Všichni hráči
-            section.ourServices.u-sectionPadding 
+            section#ourServices.ourServices.u-sectionPadding 
                 .ourServices__frame.u-frame.u-frameOffset 
                     h2.ourServices__title Naše služby
                     ul.ourServices__list 
@@ -153,7 +153,7 @@ html(lang="en")
                     picture
                         source(srcset='./img/player.webp')
                         img.ourServices__image(src='./img/player.png' alt='Football player kicking ball' loading='lazy' width='800' height='838')
-            sections.subscribe.u-sectionPadding 
+            sections#subscribe.subscribe.u-sectionPadding 
                 .subscribe__frame
                     .subscribe__imageWrapper 
                         picture
