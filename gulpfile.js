@@ -20,7 +20,7 @@ const bundleSass = () => {
         suffix: '.min'
     }))
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('./css/'));
+    .pipe(gulp.dest('./'));
 };
 
 const bundlePug = () => {
