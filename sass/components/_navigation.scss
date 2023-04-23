@@ -52,6 +52,8 @@
         .isOpen & {
             #{$block}__hamburger {
                 background: transparent;
+                position: fixed;
+                
 
                 &::before {
                     rotate: 45deg;
